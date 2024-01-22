@@ -466,6 +466,7 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 15px;
+    gap: 15px;
 }
 .contenedor_main_marco{
     width: 150px;
@@ -476,6 +477,13 @@ body {
 }
 .contenedor_main > h2{
     text-align: center;
+    margin: 0;
+}
+.contenedor_main > p{
+    margin: 0;
+}
+.contenedor_main > h1{
+    margin: 0;
 }
 .contenedor_main_marco > img{
     width: inherit;
