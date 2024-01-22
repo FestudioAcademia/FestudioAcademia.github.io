@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Sobre | Academia</title>
+  <link rel="stylesheet" href="./css/about.css">
+</head>
+
+<body id="particles-js">
+
+  <!-- Header Principal de todo el About -->
+  <header class="header_general">
+    <!-- Logo -->
+    <section class="header_general_logo">
+      <img src="./assets/img/logo.png" alt="festudio">
+    </section>
+
+    <!-- Titulo -->
+    <h1 class="header_general_nombreacademia">Festudio</h1>
+
+    <!-- Menu -->
+    <div class="header_general_menu">
+
+      <label class="header_general_menu_label" for="display_menu">
+        <div class="image_menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </label>
+      <input type="checkbox" id="display_menu">
+
+      <nav class="header_general_menu_nav">
+        <ul class="header_general_menu_nav_list">
+          <li class="general_menu_nav_list_li">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="general_menu_nav_list_li">
+            <a href="./about.html">About</a>
+          </li>
+          <li class="general_menu_nav_list_li">
+            <a>Contacto</a>
+            <span>(En construccion)</span>
+          </li>
+          <li class="general_menu_nav_list_li">
+            <a href="./desarrolladores.html">Desarrolladores</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- Todo el contenido pricipal del About -->
+
+    <!-- Portada de inicio de la pagina About -->
+    <section class="main_secciones ">
+
+      <!-- Foto de perfil -->
+      <div class="main_secciones_marco">
+        <img src="./assets/img/bolante.jpg" alt="logo-academia">
+      </div>
+
+      <!-- Titulo de presentacion -->
+      <h2>Academia Festudio</h2>
+
+      <!-- Informacion de Perfil -->
+      <p>
+        ¡Bienvenido a nuestra academia especializada en tecnologías de la información y comunicación (TIC)! Ofrecemos cursos enfocados en TIC1, TIC2, y TIC3, así como opciones de cursos libres para ampliar tus habilidades.<!-- ¡Bienvenido al camino del éxito tecnológico! -->
+      </p>
+
+      <!-- Redes -->
+      <div class="main_secciones_redes">
+        <div class="redes_img">
+          <img src="./gmail.svg" alt="gmail">
+        </div>
+        <div class="redes_img">
+          <img src="./telefono.svg" alt="telefono">
+        </div>
+        <div class="redes_img">
+          <img src="./facebook.svg" alt="facebook">
+        </div>
+      </div>
+    </section>
+
+    <!-- Que hacemos y quienes somos -->
+    <section class="main_secciones">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        Descubre quiénes somos y nuestra pasión por la excelencia tecnológica. Somos una academia comprometida con la formación especializada en tecnologías de la información y comunicación (TIC). Nuestro equipo de instructores altamente capacitados está dedicado a proporcionarte las habilidades y conocimientos necesarios para destacar en la era digital.
+      </p>
+      <!-- Acordeon con fotografias -->
+      <!-- Carrucel -->
+      <div id="carousel-container">
+        <button class="carousel-button" id="prev-button" onclick="prevSlide()">❮</button>
+        <div id="image-carousel">
+          <img class="carousel-image" src="./assets/img/academia-1.jpg" alt="Imagen 1">
+          <img class="carousel-image" src="./assets/img/academia-2.jpg" alt="Imagen 2">
+          <img class="carousel-image" src="./assets/img/academia-3.jpg" alt="Imagen 3">
+          <!-- Agrega más imágenes según sea necesario -->
+        </div>
+        <button class="carousel-button" id="next-button" onclick="nextSlide()">❯</button>
+        <button id="toggle-button" onclick="toggleAutoPlay()">▶</button>
+      </div>
+    </section>
+
+    <!-- Lo que hacemos, las tic's y los tecnicos -->
+    <section class="main_secciones">
+      <h2>Servicios de Ensenanza</h2>
+      <p>
+        Nuestros servicios están diseñados para brindarte una experiencia educativa excepcional. Nos enorgullece ofrecer:
+      </p>
+      <ul>
+        <li>Cursos Especializados</li>
+        <li>Instructores Expertos</li>
+        <li>Metodología Practica</li>
+        <li>Cursos Libres</li>
+        <li>Recursos Actualizados</li>
+      </ul>
+      <p>
+        Exploralas:
+      </p>
+      <div class="tarjetas">
+        <!-- Tarjeta 1 -->
+        <div>
+          <div class="card">
+            <img src="./assets/img/maquina-escribir.jpg" alt="Imagen de la tarjeta">
+            <div class="card-content">
+              <div class="card-title">Tic 1</div>
+              <div class="card-description">En esta seccion se introduce al estudiante a la escritura y redaccion.</div>
+              <a href="#" class="card-btn">Mas Informacion</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div>
+          <div class="card">
+            <img src="./assets/img/oficce.jpg" alt="Imagen de la tarjeta">
+            <div class="card-content">
+              <div class="card-title">Tic 2</div>
+              <div class="card-description">Se introduce al estudiante a utilizar correctamente la computadora, conocer su sistema basico, los paquetes básicos de Microsoft Office, Sistema de Archivos e Internet.</div>
+              <a href="#" class="card-btn">Mas Informacion</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div>
+          <div class="card">
+            <img src="./assets/img/chico3.jpg" alt="Imagen de la tarjeta">
+            <div class="card-content">
+              <div class="card-title">Tic 3</div>
+              <div class="card-description">El estudiante obtendra conocimientos semi avanzados, se repasara todo los temas anteriores y se le enseñara nuevas actualizaciones de los programas básicos de la Tic 2.</div>
+              <a href="#" class="card-btn">Mas Informacion</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div>
+          <div class="card">
+            <img src="./assets/img/tecnico.jpg" alt="Imagen de la tarjeta">
+            <div class="card-content">
+              <div class="card-title">Cursos Libres</div>
+              <div class="card-description">Obtendra conocimientos avanzados y automatización de Datos, mantenimiento a los ordenadores y sera capaz de pensar de manera correcta a implementar soluciones creativas con el uso de la tecnología.</div>
+              <a href="#" class="card-btn">Mas Informacion</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Horarios -->
+    <section class="main_secciones">
+      <h2>Horarios</h2>
+      <p>
+        El tiempo de estudio consta de 2 horas un día a la semana, puede escoger el día que le parezca mejor, si necesita flexibilidad de horarios contactenos, los horarios son los siguientes:
+      </p>
+      <!-- Acordeon pero como el que vimos en midudev, que agrupe lunes, martes, etc... -->
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(1)">
+            Lunes
+            <span class="icon">▶</span>
+          </div>
+          <div class="accordion-content">
+            <p>8 AM hasta las 10 AM</p>
+            <p>10 AM hasta las 12 PM</p>
+            <p></p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(2)">
+            Martes
+            <span class="icon">▶</span>
+          </div>
+          <div class="accordion-content">
+            <p>8 AM hasta las 10 AM</p>
+            <p>10 AM hasta las 12 PM</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(3)">
+            Miercoles
+            <span class="icon">▶</span>
+          </div>
+          <div class="accordion-content">
+            <p>8 AM hasta las 10 AM</p>
+            <p>10 AM hasta las 12 PM</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(4)">
+            Jueves
+            <span class="icon">▶</span>
+          </div>
+          <div class="accordion-content">
+            <p>8 AM hasta las 10 AM</p>
+            <p>10 AM hasta las 12 PM</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(5)">
+            Viernes
+            <span class="icon">▶</span>
+          </div>
+          <div class="accordion-content">
+            <p>8 AM hasta las 10 AM</p>
+            <p>10 AM hasta las 12 PM</p>
+            <p>12 PM hasta las 2 PM</p>
+            <p>2 PM hasta las 4 PM</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(6)">
+            Sabado
+            <span class="icon">▶</span>
+          </div>
+          <div class="accordion-content">
+            <p>8 AM hasta las 10 AM</p>
+            <p>10 AM hasta las 12 PM</p>
+            <p>12 PM hasta las 2 PM</p>
+            <p>2 PM hasta las 4 PM</p>
+            <p>4 PM hasta las 6 PM</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(7)">
+            Domingo
+            <span class="icon">▶</span>
+          </div>
+          <div class="accordion-content">
+            <p>8 AM hasta las 10 AM</p>
+            <p>10 AM hasta las 12 PM</p>
+            <p>12 PM hasta las 2 PM</p>
+            <p>2 PM hasta las 4 PM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ubicacion -->
+    <section class="main_secciones">
+      <h2>Ubicacion</h2>
+      <p>
+        Nos encontramos ubicados en Palín Escuintla, Guatemala. Nuestra dirección es:
+      </p>
+      <p>5a. Calle 0 - 41 Barrio San Antonio Zona 3, Palín.</p>
+      <!-- Mapa de google maps -->
+    </section>
+
+    <!-- Enlace a contactanos -->
+    <a href="#" class="button">Contactanos!!!</a>
+  </main>
+
+  <footer class="footer_general">
+    <!-- Pieda del contenido principal del About -->
+    <span>Copyrith 2024 - 2025</span>
+
+    <span>Contactar a Desarrolladores</span>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  
+</body>
+
+</html>
